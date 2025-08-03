@@ -1,0 +1,120 @@
+{
+  "info": {
+    "name": "Puntos de Recolecci\u00f3n - CRUD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "residuos-crud-20250803155858"
+  },
+  "item": [
+    {
+      "name": "Crear Punto",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Punto Reciclaje Central\",\n  \"direccion\": \"Calle Falsa 123\",\n  \"tipoResiduo\": \"Pl\\u00e1stico\",\n  \"horarioDisponible\": \"Lun a Vie de 8 a 18 hs\",\n  \"activo\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/puntos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "puntos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obtener Todos los Puntos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/puntos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "puntos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obtener Punto por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/puntos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "puntos",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Actualizar Punto",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Punto Reciclaje Central Editado\",\n  \"direccion\": \"Calle Nueva 456\",\n  \"tipoResiduo\": \"Vidrio\",\n  \"horarioDisponible\": \"Lun a S\\u00e1b de 9 a 19 hs\",\n  \"activo\": false\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/puntos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "puntos",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Eliminar Punto",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/puntos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "puntos",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}
