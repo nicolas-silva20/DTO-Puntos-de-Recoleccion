@@ -1,6 +1,6 @@
 # 📦 API REST – Gestión de Puntos de Recolección de Residuos ♻️
 
-API REST desarrollada en Spring Boot para gestionar puntos de recolección de residuos reciclables en una ciudad, cooperativa o institución. Permite crear, consultar, actualizar y eliminar puntos registrados. Está pensada para escalarse a aplicaciones reales.
+API REST desarrollada en Spring Boot para gestionar puntos de recolección de residuos reciclables en una ciudad, cooperativa o institución. Permite crear, consultar, actualizar y eliminar puntos registrados.
 
 ---
 
@@ -79,7 +79,7 @@ API REST desarrollada en Spring Boot para gestionar puntos de recolección de re
 
 ## 🧪 Pruebas con Postman
 
-Podés usar la colección incluida:
+Puede usar la colección incluida:
 
 📂 `coleccion_postman_residuos_crud.json`
 
